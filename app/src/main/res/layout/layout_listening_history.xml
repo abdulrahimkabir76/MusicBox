@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/spotify_black"
+    android:padding="16dp"
+    android:stretchColumns="1">
+
+    <TableRow android:paddingBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Date"
+            android:textColor="@color/spotify_light_gray"
+            android:textSize="12sp"
+            android:textAllCaps="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Track"
+            android:textColor="@color/spotify_light_gray"
+            android:textSize="12sp"
+            android:textAllCaps="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Duration"
+            android:textColor="@color/spotify_light_gray"
+            android:textSize="12sp"
+            android:textAllCaps="true" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="12dp">
+        <TextView
+            android:text="Oct 24"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/spotify_light_gray"
+            android:textSize="14sp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingStart="16dp">
+            <TextView
+                android:text="Die With A Smile"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:text="Lady Gaga, Bruno Mars"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/spotify_light_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:paddingStart="16dp"
+            android:text="4:11"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/spotify_light_gray"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="12dp">
+        <TextView
+            android:text="Oct 23"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/spotify_light_gray"
+            android:textSize="14sp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingStart="16dp">
+            <TextView
+                android:text="APT."
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:text="ROSÉ, Bruno Mars"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/spotify_light_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:paddingStart="16dp"
+            android:text="2:50"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/spotify_light_gray"
+            android:textSize="14sp" />
+    </TableRow>
+
+</TableLayout>
