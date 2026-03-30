@@ -46,11 +46,15 @@
             android:paddingStart="16dp">
             <TextView
                 android:text="Die With A Smile"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
             <TextView
                 android:text="Lady Gaga, Bruno Mars"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
                 android:fontFamily="sans-serif"
                 android:textColor="@color/spotify_light_gray"
                 android:textSize="14sp" />
@@ -74,11 +78,15 @@
             android:paddingStart="16dp">
             <TextView
                 android:text="APT."
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
             <TextView
                 android:text="ROSÉ, Bruno Mars"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
                 android:fontFamily="sans-serif"
                 android:textColor="@color/spotify_light_gray"
                 android:textSize="14sp" />
