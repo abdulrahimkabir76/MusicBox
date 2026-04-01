@@ -110,7 +110,7 @@
                     android:layout_height="24dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:src="@android:drawable/ic_menu_more"
+                    android:src="@drawable/ic_more"
                     android:tint="@color/spotify_light_gray" />
             </RelativeLayout>
 
@@ -149,7 +149,7 @@
                     android:layout_height="24dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:src="@android:drawable/ic_menu_more"
+                    android:src="@drawable/ic_more"
                     android:tint="@color/spotify_light_gray" />
             </RelativeLayout>
 
@@ -163,7 +163,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:src="@android:drawable/ic_media_play"
+        android:src="@drawable/ic_play"
         android:tint="@color/spotify_black"
         app:backgroundTint="@color/spotify_green"
         app:fabSize="normal"
