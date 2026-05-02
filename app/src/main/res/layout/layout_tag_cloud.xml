@@ -1,107 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="56dp"
     android:background="@color/spotify_black"
-    android:padding="16dp">
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp"
+    android:scrollbars="none">
 
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow_tags"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="tag_music,tag_podcasts,tag_live,tag_wrapped,tag_kpop,tag_fitness,tag_focus"
-        app:flow_horizontalGap="8dp"
-        app:flow_verticalGap="12dp"
-        app:flow_wrapMode="aligned"
-        app:flow_horizontalStyle="start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tag_music"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_pill"
-        android:backgroundTint="@color/spotify_green"
-        android:fontFamily="sans-serif-medium"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
-        android:text="Music"
-        android:textColor="@color/spotify_black"
-        android:textSize="14sp" />
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tag_podcasts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_pill"
-        android:fontFamily="sans-serif-medium"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
-        android:text="Podcasts"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tag_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pill"
+            android:backgroundTint="@color/spotify_green"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="8dp"
+            android:text="Music"
+            android:textColor="@color/spotify_black"
+            android:textSize="13sp" />
 
-    <TextView
-        android:id="@+id/tag_live"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_pill"
-        android:fontFamily="sans-serif-medium"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
-        android:text="Live"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tag_podcasts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="8dp"
+            android:text="Podcasts"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
 
-    <TextView
-        android:id="@+id/tag_wrapped"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_pill"
-        android:fontFamily="sans-serif-medium"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
-        android:text="Wrapped"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tag_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="8dp"
+            android:text="Live"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
 
-    <TextView
-        android:id="@+id/tag_kpop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_pill"
-        android:fontFamily="sans-serif-medium"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
-        android:text="K-Pop"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tag_wrapped"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="8dp"
+            android:text="Wrapped"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
 
-    <TextView
-        android:id="@+id/tag_fitness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_pill"
-        android:fontFamily="sans-serif-medium"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
-        android:text="Fitness"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tag_kpop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="8dp"
+            android:text="K-Pop"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
 
-    <TextView
-        android:id="@+id/tag_focus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_pill"
-        android:fontFamily="sans-serif-medium"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="10dp"
-        android:text="Focus"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tag_fitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="8dp"
+            android:text="Fitness"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tag_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="8dp"
+            android:text="Focus"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</HorizontalScrollView>
